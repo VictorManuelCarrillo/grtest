@@ -14,3 +14,23 @@ pnpm i bumpp -D
 // generar el script release para bumpp en el package.json
 "release": "bumpp --commit --push --tag"
 //3. crear flujo de github actions
+
+// 4. instalar y configurar eslint y prettier
+
+
+//5. install eslint
+pnpm add -D @types/reac @types/node
+pnpm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react
+// eslintrc.json
+
+// install prettier
+pnpm add -D prettier eslint-config-prettier eslint-plugin-prettier
+//
+
+// install husky
+❯ pnpm dlx husky-init && pnpm install
+
+pnpm add --dev husky @commitlint/cli @commitlint/config-conventional
+
+pnpm dlx husky install
+pnpm dlx husky add .husky/commit-msg 'pnpm dlx commitlint --edit "$1"'
