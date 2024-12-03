@@ -1,0 +1,16 @@
+// 1 install sass
+// en nextconfig.ts configurar:
+import type { NextConfig } from 'next'
+ 
+const nextConfig: NextConfig = {
+  sassOptions: {
+    implementation: 'sass-embedded',
+  },
+}
+ 
+export default nextConfig
+//2. instalacion de bumpp
+pnpm i bumpp -D
+// generar el script release para bumpp en el package.json
+"release": "bumpp --commit --push --tag"
+//3. crear flujo de github actions
