@@ -28,9 +28,3 @@ pnpm add -D prettier eslint-config-prettier eslint-plugin-prettier
 //
 
 // install husky
-❯ pnpm dlx husky-init && pnpm install
-
-pnpm add --dev husky @commitlint/cli @commitlint/config-conventional
-
-pnpm dlx husky install
-pnpm dlx husky add .husky/commit-msg 'pnpm dlx commitlint --edit "$1"'
