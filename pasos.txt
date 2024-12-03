@@ -28,3 +28,7 @@ pnpm add -D prettier eslint-config-prettier eslint-plugin-prettier
 //
 
 // install husky
+pnpm add --save-dev husky
+pnpm exec husky init
+❯ pnpm add -D @commitlint/config-conventional @commitlint/cli
+.commitlintrc.json
